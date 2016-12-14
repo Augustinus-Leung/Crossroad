@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="drop_down_list_attr">
+        <attr name="isAutoLoadOnBottom" format="boolean" />
+        <attr name="isDropDownStyle" format="boolean" />
+        <attr name="isOnBottomStyle" format="boolean" />
+    </declare-styleable>
+</resources>

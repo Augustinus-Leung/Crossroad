@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorPrimary"
+     >
+
+        <TextView
+            android:id="@+id/main_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large_size" />
+
+        <ImageButton
+            android:id="@+id/create_group_btn"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/msg_title_bar_right_btn_bg"
+            android:src="@drawable/msg_titlebar_right_btn" />
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--style="@style/toolbar_style">-->
+
+        <!--<TextView-->
+            <!--android:text="@string/message"-->
+            <!--style="@style/toolbar_title_style" />-->
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/message_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/message_list_split_line_color"
+        android:headerDividersEnabled="false"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

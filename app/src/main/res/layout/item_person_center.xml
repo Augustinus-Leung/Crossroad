@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:text="新闻门户"
+        android:textSize="16dp"
+        android:id="@+id/person_text"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_icon"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

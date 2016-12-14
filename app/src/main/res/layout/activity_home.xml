@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:id="@+id/home_view">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/white">
+        <LinearLayout
+            android:paddingLeft="@dimen/bottom_button_padding"
+            android:id="@+id/message_ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/message_img"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/news_unread_num"
+                    android:background="@drawable/notify"
+                    style="@style/normal_text_style"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/message_img"
+                    android:layout_height="@dimen/bottom_button_size"
+                    android:layout_width="@dimen/bottom_button_size"
+                    android:src="@mipmap/message"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/message_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/bottom_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/message"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_toEndOf="@+id/service_img"
+                    android:layout_alignParentTop="true"
+                    android:text="12"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/service_unread_num"
+                    android:background="@drawable/notify"
+                    style="@style/normal_text_style"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/wallet_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/bottom_text_size"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/wallet"/>
+
+                <ImageView
+                    android:id="@+id/wallet_img"
+                    android:layout_height="@dimen/bottom_button_size"
+                    android:layout_width="@dimen/bottom_button_size"
+                    android:src="@mipmap/wallet_place"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_ll"
+            android:paddingRight="@dimen/bottom_button_padding"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="99+"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/me_unread_num"
+                    android:background="@drawable/notify"
+                    style="@style/normal_text_style"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/store_img"
+                    android:layout_height="@dimen/bottom_button_size"
+                    android:layout_width="@dimen/bottom_button_size"
+                    android:src="@mipmap/store_place"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"                     />
+                <TextView
+                    android:id="@+id/store_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/bottom_text_size"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/store"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/person_ll"
+            android:paddingRight="@dimen/bottom_button_padding"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="99+"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/person_unread_num"
+                    android:background="@drawable/notify"
+                    style="@style/normal_text_style"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/person_img"
+                    android:layout_height="@dimen/bottom_button_size"
+                    android:layout_width="@dimen/bottom_button_size"
+                    android:src="@mipmap/person_center_place"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"                     />
+                <TextView
+                    android:id="@+id/person_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/bottom_text_size"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/person_center"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/deep_grey"/>
+</LinearLayout>
